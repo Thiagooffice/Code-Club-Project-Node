@@ -1,11 +1,14 @@
  const express = require("express")
-
+ const cors = require("cors")
  const app = express() //iniciando
 
  const uuid = require("uuid") //criando o id
 
- const porta = 3000 //abrir na posta 300
+ 
+
+ const porta = 3001 //abrir na posta 3001
  app.use(express.json()) // o programa vai usar json
+ app.use(cors())
 
  //-----------------------------------
 
